@@ -26,6 +26,9 @@
         <TextBlock Text="Internal Test Version" Grid.Row="1" FontSize="16"
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    Grid.ColumnSpan="2" />
-
+        <TextBlock Text="**Go To Orders View**" Grid.Row="2" Grid.Column="0" 
+                   HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        <TextBlock Text="**Submit Order**" Grid.Row="2" Grid.Column="1" 
+                   HorizontalAlignment="Center"  VerticalAlignment="Center" />
     </Grid>
 </Page>
