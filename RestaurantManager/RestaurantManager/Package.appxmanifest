@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="94ae9142-6773-43cd-a007-78905649b3c4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>RestaurantManager</DisplayName>
-    <PublisherDisplayName>sorcet</PublisherDisplayName>
+    <PublisherDisplayName>jarhoads</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
