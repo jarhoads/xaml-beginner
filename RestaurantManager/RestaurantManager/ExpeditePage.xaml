@@ -7,6 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <!-- Set the AppBar at the top of the Page -->
+    <Page.TopAppBar>
+        <AppBar>
+        <AppBarButton x:Name="ExpediteAppButtonHome"
+                      Icon="Home" Label="Home" 
+                      Click="ExpediteAppButtonHome_Click" />
+        </AppBar>
+    </Page.TopAppBar>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.9*" />
@@ -15,8 +24,14 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <TextBlock Text="**Clear All Orders**" Grid.Row="1" Grid.Column="0" 
-                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <GridView Grid.Row="0" Margin="5">
+
+        </GridView>
+ 
+        <Button Content="Clear All Orders" 
+                Grid.Row="1"  Grid.Column="0" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" />
 
     </Grid>
 </Page>

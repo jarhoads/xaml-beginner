@@ -7,6 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton x:Name="AppBarButtonHome" 
+                          Icon="Home" Label="Home" 
+                          Click="AppBarButtonHome_Click" />
+        </AppBar>
+    </Page.TopAppBar>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*" />
@@ -21,12 +29,6 @@
             <ColumnDefinition Width="0.25*" />
         </Grid.ColumnDefinitions>
 
-        <AppBar Grid.Row="0" Grid.ColumnSpan="3" >
-            <AppBarButton x:Name="AppBarButtonHome" 
-                          Icon="Home" Label="Home" 
-                          Click="AppBarButtonHome_Click" />
-        </AppBar>
-        
         <TextBlock Text="Special Requests:" Grid.Row="1" Grid.Column="1" 
                    HorizontalAlignment="Left"  VerticalAlignment="Top" />
         <TextBlock Text="Order Items:" Grid.Row="1" Grid.Column="2" 
