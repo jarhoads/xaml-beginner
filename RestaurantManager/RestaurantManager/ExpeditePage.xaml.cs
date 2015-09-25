@@ -20,11 +20,22 @@ namespace RestaurantManager
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class ExpeditePage : Page
     {
-        public BlankPage1()
+        public ExpeditePage()
         {
             this.InitializeComponent();
+        }
+
+        /// <summary>
+        /// Navigates to MainPage when Home AppButton is clicked
+        /// uses Frame.Navigate for page navigation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ExpediteAppButtonHome_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }
