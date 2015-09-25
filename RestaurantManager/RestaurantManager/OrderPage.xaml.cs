@@ -27,6 +27,12 @@ namespace RestaurantManager
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Navigate to MainPage when the Home button is clicked
+        /// uses Frame.Navigate for page navigation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarButtonHome_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));

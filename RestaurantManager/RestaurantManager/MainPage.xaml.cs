@@ -27,11 +27,23 @@ namespace RestaurantManager
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Navigates to the OrderPage when the SubmitOrder button is clicked
+        /// uses Frame.Navigate for page navigation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSubmitOrder_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(OrderPage));
         }
 
+        /// <summary>
+        /// Navigates to the Expedite page when Orders button is clicked
+        /// uses Frame.Navigate for page navigation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonOrdersView_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(ExpeditePage));
