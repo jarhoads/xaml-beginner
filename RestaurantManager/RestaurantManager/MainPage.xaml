@@ -17,18 +17,15 @@
             <ColumnDefinition Width="0.5*" />
             <ColumnDefinition Width="0.5*" />
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Resaurant" Grid.Row="0" Grid.Column="0" 
-                   HorizontalAlignment="Right" VerticalAlignment="Bottom" 
-                   Margin="0,0,10,10" />
-        <TextBlock Text="Manager" Grid.Row="0" Grid.Column="1" 
-                   HorizontalAlignment="Left" VerticalAlignment="Bottom" 
-                   Margin="10,0,0,10" />
+        <TextBlock Text="Resaurant Manager" Grid.Row="0"  
+                   HorizontalAlignment="Center"  VerticalAlignment="Bottom" 
+                   Grid.ColumnSpan="2"/>
         <TextBlock Text="Internal Test Version" Grid.Row="1" FontSize="16"
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    Grid.ColumnSpan="2" />
-        <TextBlock Text="**Go To Orders View**" Grid.Row="2" Grid.Column="0" 
+        <Button Content="Go to Orders View" Grid.Row="2" Grid.Column="0" 
                    HorizontalAlignment="Center"  VerticalAlignment="Center" />
-        <TextBlock Text="**Submit Order**" Grid.Row="2" Grid.Column="1" 
+        <Button Content="Submit Order" Grid.Row="2" Grid.Column="1" 
                    HorizontalAlignment="Center"  VerticalAlignment="Center" />
     </Grid>
 </Page>
