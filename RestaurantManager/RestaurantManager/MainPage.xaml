@@ -24,7 +24,7 @@
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    Grid.ColumnSpan="2" />
         <Button Content="Go to Orders View" Grid.Row="2" Grid.Column="0" 
-                   HorizontalAlignment="Center"  VerticalAlignment="Center" />
+                   HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click" />
         <Button Content="Submit Order" Grid.Row="2" Grid.Column="1" 
                    HorizontalAlignment="Center"  VerticalAlignment="Center" />
     </Grid>
