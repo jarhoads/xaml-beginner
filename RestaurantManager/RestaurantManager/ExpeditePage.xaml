@@ -10,12 +10,12 @@
     <!-- Set the AppBar at the top of the Page -->
     <Page.TopAppBar>
         <AppBar>
-        <AppBarButton x:Name="ExpediteAppButtonHome"
+            <AppBarButton x:Name="ExpediteAppButtonHome"
                       Icon="Home" Label="Home" 
                       Click="ExpediteAppButtonHome_Click" />
         </AppBar>
     </Page.TopAppBar>
-    
+
     <!-- Grid with GridView and clearing button -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -26,7 +26,10 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <GridView Grid.Row="0" Margin="5"/>
+        <!-- GridView with binding to DataManager App Resource -->
+        <GridView Grid.Row="0" Margin="5" 
+                  ItemsSource="{Binding OrderItems, 
+                                Source={StaticResource DataManager}}" />
 
         <Button Content="Clear All Orders" 
                 Grid.Row="1"  Grid.Column="0" 
