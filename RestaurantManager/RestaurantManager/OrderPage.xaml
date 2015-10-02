@@ -36,12 +36,17 @@
         <TextBlock Text="Order Items:" Grid.Row="1" Grid.Column="2" 
                    HorizontalAlignment="Left"  VerticalAlignment="Top" />
  
+        <!-- ListView Items are now bound with App Resources -->
         <ListView x:Name="ListViewAddOrder" 
                   Grid.Row="1" Grid.Column="0"
-                  Grid.RowSpan="3" Margin="5" />
+                  Grid.RowSpan="3" Margin="5" 
+                  ItemsSource="{Binding MenuItems, 
+                                Source={StaticResource DataManager}}"/>
         <ListView x:Name="ListViewOrderItems" 
                   Grid.Row="2" Grid.Column="2"
-                  Grid.RowSpan="2" Margin="5"/>
+                  Grid.RowSpan="2" Margin="5"
+                  ItemsSource="{Binding CurrentlySelectedMenuItems, 
+                                Source={StaticResource DataManager}}"/>
 
         <Button x:Name="ButtonAddOrder" 
                 Content="Add To Order" Grid.Row="4" Grid.Column="0" 

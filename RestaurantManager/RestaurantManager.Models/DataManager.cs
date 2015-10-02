@@ -7,6 +7,13 @@ using System.Collections.ObjectModel;
 
 namespace RestaurantManager.Models
 {
+    /// <summary>
+    /// DataManager class used for data binding in RestaurantManager App
+    /// Contains the following properties: 
+    ///          ObservableCollection<string> OrderItems
+    ///          List<string> MenuItems
+    ///          List<string> CurrentlySelectedItems
+    /// </summary>
     public class DataManager
     {
         public DataManager()
